@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+ 	<body>	
+    <script>
+     // me conecto a una api, pido datos, los convierto a json, y los lanzos
+     fetch("http://127.0.0.1:5000/api")
+     .then(function(respuesta){return respuesta.json()})
+     .then(function(datos){
+      console.log(datos)
+     })
+    </script>
+  </body>
+</html>
